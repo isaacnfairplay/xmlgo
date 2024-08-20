@@ -156,7 +156,7 @@ func processFile(fileName string, outputDir string, parquetWriter *writer.Parque
 		}
 	}
 
-	if ext == ".zip" || ext == ".xlsx" || ext == ".docx" || ext == ".pptx" {
+	if ext == ".zip" || ext == ".xlsx" || ext == ".docx" || ext == ".pptx" || ext == ".vsdx" || ext == ".odt" || ext == ".ods" || ext == ".odp" || ext == ".epub" || ext == ".apk" || ext == ".dtsx" || ext == ".csproj" || ext == ".vbproj" || ext == ".nuspec" || ext == ".plist" || ext == ".resx" || ext == ".dae" || ext == ".key" || ext == ".pages" || ext == ".numbers" {
 		return extractAndProcessZip(fileName, outputDir, parquetWriter, extensions)
 	}
 
